@@ -262,6 +262,10 @@ def graph_fourier_transform(timeseries, eigenvec, energy=False, mean=False):
         Returns either the projection of the graph on the timeseries, or its energy.
     """
     timeseries = timeseries.squeeze()
+
+    if timeseries.ndim < 2:
+        timeseries = timeseries[..., np.newaxis]
+
     if timeseries.ndim < 3:
         proj = eigenvec.conj().T @ timeseries
     else:
