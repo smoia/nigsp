@@ -74,8 +74,8 @@ def _get_parser():
         action="append_const",
         const="sdi",
         help=(
-            "Compute the structural decoupling index "
-            "(see Preti et al, 2019, Nat. Commun.)"
+            "Compute the structural decoupling index (see Preti et al, 2019, Nat. Commun.)."
+            "In order to output a figure, you need to specify an atlas with `-a`"
         ),
         default=None,
     )
