@@ -13,6 +13,6 @@ export TZ=Europe/Brussels
 export DEBIAN_FRONTEND=noninteractive
 export TZ=Europe/Brussels
 # Prepare repos and install dependencies
-pip3 install ipython==8.5.0
+pip3 install ipython==8.5.0 /tmp/nigsp[all]
 # Final removal of lists and cleanup
 rm -rf /var/lib/apt/lists/*
